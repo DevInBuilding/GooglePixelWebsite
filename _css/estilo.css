@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap'); /*Importado do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@font-face {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient(to bottom, #34A853, #4486EC, #4486EC);;
+    background-size: 100% 300%;
+    color: #3a3a3a;
+    font-family: Segoe UI;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/*Formatação de links*/
+a {
+    color: #0a2266;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/* Formatando o div da interface */
+div#interface {
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: -20px auto -10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+
+/* Formatando o cabeçalho*/
+header#cabecalho {
+    border-bottom: 1px #147c30 solid;
+    height: 160px;
+}
+
+header#cabecalho h1 {
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: normal;
+    color: #000000;
+    text-shadow: 0px 1px 2px rgba(44, 44, 44, 0.5);
+    padding: 0px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    text-align: center;
+    color: rgb(82, 82, 82);
+    padding: 0px;
+    margin-top: 5px;
+}
+
+header#cabecalho img#google-icon {
+    position: absolute;
+    left: 160px;
+    top: 60px;
+    width: 180px;
+    height: 180px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 970px;
+    top: 52px;
+}
+
+/* Formatação de imagem */
+figure.fotoLegenda {
+    position: relative; /*Essa posição define onde a imagem deve estar dentro do código do HTML*/
+    border: 2px solid white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+figure.fotoLegenda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.text-figcaption{
+    text-align: center;
+    color: #000;
+    font-size: 0.8rem;
+}
+
+/* Formatação de menu */
+nav#menu {
+    display: block;
+}
+
+nav#menu h1 {
+    display: none; /*Escondendo o nome 'Menu Principal'*/
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 550px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #69e289;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #1ba540;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #ffffff;
+}
+
+/* Formatando a tabela */
+table#tabelaspec {
+    border: 2px solid #1ba540;
+    border-spacing: 0px;
+    border-radius: 5px;
+    margin: 20px auto 30px auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #1ba540;
+    padding: 10px;
+}
+
+table#tabelaspec td.ce { /*Formatando as células da esquerda*/
+    background-color: #1ba540;
+    color: #ffffff;
+    text-align: right;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #c0ebcb;
+    color: #000000;
+    text-align: left;
+}
+
+table#tabelaspec caption {
+    color: #383838;
+    font-size: 13pt;
+    font-weight: bolder;
+    margin: auto 10px auto 10px;
+    padding-right: 0px;
+}
+
+table#tabelaspec caption span {
+    color: #131313;
+    font-size: 7pt;
+    float: right;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+/* Formatando o section */
+section#corpo {
+    display: block;
+    width: 550px;
+    float: left; /* ### Recurso deve ser usado em conjunto com o display configurado em 'block' ### */
+    border-right: 1px #147c30 solid;
+    padding: 13px;
+    margin: 0px;
+}
+
+article#noticiaPrincipal h2.tituloSecao {
+    font-size: 16pt;
+    color: #ffffff;
+    background-color: #1ba540;
+    border-radius: 10px;
+    -moz-border-radius: 10px; /* --> Exibir bordas no firefox*/
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalhoArtigo h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bolder;
+    font-size: 18pt;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+header#cabecalhoArtigo h2 {
+    font-size: 13pt;
+    color: #525252;
+    margin: 0px;
+}
+
+article#noticiaPrincipal h3.direita {
+    text-align: right;
+    font-size: 8pt;
+    margin-right: 5px;
+}
+
+header#cabecalhoArtigo h3 {
+    font-size: 12pt;
+    color: #525252;
+}
+
+/* FORMATANDO AS LATERAIS DA PÁGINA */
+aside#lateral {
+    display: block;
+    border-radius: 5px;
+    width: 400px;
+    float: right; /* ### ... ### */
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #c0ebcb;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+aside#lateral h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bolder;
+    font-size: 18pt;
+    color: #000000;
+    margin-top: 10px;
+}
+
+aside#lateral h3 {
+    background-color: #1ba540;
+    border-radius: 10px;
+    -moz-border-radius: 10px; /* --> Exibir bordas no firefox*/
+    color: #ffffff;
+    font-size: 16pt;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+#video-news {
+    margin: 20px 50px 20px 50px;
+    border-radius: 5px;
+}
+/*---------------------------------------------------------------------------------------------*/
+
+footer#rodape {
+    clear: both;
+    border-top: 1px #167c31 solid;
+}
+
+footer#rodape p {
+    text-align: center;
+    font-style: italic;
+}

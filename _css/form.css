@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+form#fContato {
+    width: 500px;
+    margin: auto;
+}
+
+span, #span { color: red;}
+#span { 
+    margin-top: 3px;
+    font-size: 10pt;
+}
+
+textarea { width: 350px; margin-left: 35px;}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:hover, textarea:hover {
+    background-color: #e4e4e4;
+}
+
+legend {
+    color: #37236d;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    color: #37236d;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+input#cEnviar {
+    font-weight: bolder;
+    margin-left: 210px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+}

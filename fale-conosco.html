@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html "pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça o Google Pixel</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Pixel</h1>
+                <h2>O smartphone do Google vem com novidades para os usuários</h2>
+            </hgroup>
+    
+            <img id="google-icon" src="_imagens/google-pixel-logo.png"/>
+    
+            <img id="icone" src="_imagens/google-pixel.png"/>
+    
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="square">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="specs.html">Especificações</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="multimidia.html">Multimídia</a></li>
+                <li><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+        </header>
+
+<section id="corpo-full">
+    <article id="noticiaPrincipal">
+        <header id="cabecalhoArtigo">
+        <hgroup>
+            <h3>Fale Conosco > Contato</h3>
+            <h1>Formulário de Contato</h1>
+            <h2>por Lucas Barros</h2>
+            <h3 class="direita">Atualizado em 20 jul. 2021</h3>
+        </hgroup>
+        </header>
+
+        <form method="POST" id="fContato" action="mailto:lucasbarrosprofessional@gmail.com" oninput="calc_total();"><!--Formulário-->
+            <fieldset id="usuario">
+                <p id="span">* Campo Obrigatório</p>
+                <legend>Identificação do Usuário</legend>
+                <p><label for="cNome"><span>*</span> Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p><!--As labels são clicáveis e úteis para auxiliar usuários a preencherem os campos-->
+                <p><label for="cSenha"><span>*</span> Senha:</label> <input type="password" name="tSenha" id="cSenha" size="20" maxlength="8" placeholder="Senha de 8 dígitos"/></p>
+                <p><label for="cEmail"><span>*</span> E-mail:</label> <input type="email" name="tEmail" id="cEmail" size="30" maxlength="40" placeholder="nome@email.com"/></p>
+                <fieldset id="sexo"><legend>Sexo</legend>
+                    <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Masculino</label>&nbsp;
+                    <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>&nbsp;
+                    <input type="radio" name="tSexo" id="cOutro"/> <label for="cOutro">Outro</label>
+                </fieldset>
+                <p><label for="cData">Data de Nascimento:</label> <input type="date" name="tData" id="cData" min="1915-01-01" max="2021-07-20"/></p>
+            </fieldset>
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+                <p><label for="cCep">CEP:</label> <input type="number" name="cep" id="cCep" size="20" maxlength="8" min="0" max="99999999" placeholder="Digite seu CEP"/></p>
+                <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="10" maxlength="30" placeholder="Ex.: Rua, avenida, travessa..." list="logradouro"/>
+                <datalist id="logradouro">
+                    <option value="Aeroporto"></option>
+                    <option value="Alameda"></option>
+                    <option value="Avenida"></option>
+                    <option value="Campo"></option>
+                    <option value="Distrito"></option>
+                    <option value="Estrada"></option>
+                    <option value="Fazenda"></option>
+                    <option value="Largo"></option>
+                    <option value="Loteamento"></option>
+                    <option value="Parque"></option>
+                    <option value="Praça"></option>
+                    <option value="Quadra"></option>
+                    <option value="Rua"></option>
+                    <option value="Setor"></option>
+                    <option value="Travessa"></option>
+                    <option value="Viaduto"></option>
+                </datalist></p>
+                <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="99999" placeholder="Digite o número da residência"/></p>
+                <p><label for="cEstado">Estado:</label> <input type="text" name="tEstado" id="cEstado" size="2" maxlength="40" placeholder="Digite seu estado" list="estado"/>
+                <datalist id="estado">
+                    <option value="AM"></option>
+                    <option value="AC"></option>
+                    <option value="AP"></option>
+                    <option value="RR"></option>
+                    <option value="RO"></option>
+                    <option value="MA"></option>
+                    <option value="TO"></option>
+                    <option value="PA"></option>
+                    <option value="PI"></option>
+                    <option value="CE"></option>
+                    <option value="RN"></option>
+                    <option value="PB"></option>
+                    <option value="PE"></option>
+                    <option value="SE"></option>
+                    <option value="AL"></option>
+                    <option value="BA"></option>
+                    <option value="MT"></option>
+                    <option value="MS"></option>
+                    <option value="GO"></option>
+                    <option value="DF"></option>
+                    <option value="MG"></option>
+                    <option value="ES"></option>
+                    <option value="RJ"></option>
+                    <option value="SP"></option>
+                    <option value="PR"></option>
+                    <option value="SC"></option>
+                    <option value="RS"></option></p>
+                </datalist>
+                <p><label for="cCidade">Cidade:</label> <input type="text" name="tCidade" id="cCidade" size="20" maxlength="40" placeholder="Digite sua cidade" list="cidades"/></p>
+                <datalist id="cidades">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="São Paulo"></option>
+                    <option value="Espírito Santo"></option>
+                    <option value="Belo Horizonte"></option>
+                    <option value="Curitiba"></option>
+                    <option value="Florianópolis"></option>
+                    <option value="Porto Alegre"></option>
+                </datalist>
+            </fieldset>
+            <fieldset id="mensagem">
+                <legend>Mensagem do Usuário</legend>
+                <p><label for="cGrau">Grau de Urgência:</label> Mín <input type="range" name="tGrau" id="cGrau" min="0" max="100" step="10"/> Máx</p>
+                <p><label for="cMensagem">Mensagem:</label> <textarea name="tMensagem" id="cMensagem" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+            </fieldset>
+            <fieldset id="pedido">
+                <legend>Quero um Google Pixel</legend>
+                <p><input type="checkbox" name="tPed" id="cPed"/>
+                <label for="cPed">Gostaria de adquirir um Google Pixel quando disponível</label></p>
+                <p><label for="cColor">Cor:</label> <input type="text" name="tColor" id="cColor" placeholder="Digite uma cor" list="cor"/></p>
+                <datalist id="cor">
+                    <option value="Preto"></option>
+                    <option value="Azul"></option>
+                    <option value="Prateado"></option>
+                </datalist>
+                <p><label for="cQtde">Quantidade:</label> <input type="number" name="tQtde" id="cQtde" min="0" max="100"/></p>
+                <p><label for="cPreco">Preço Total:</label> R$ <input type="text" name="tPreco" id="cPreco" placeholder="Total a pagar" readonly/></p>
+            </fieldset>
+
+            <input type="submit" name="tEnviar" id="cEnviar" value="Enviar" onclick="enviar()"/>
+        </form>
+        <script language="JavaScript" src="_javascript/funcoes.js"></script>
+<footer id="rodape">
+    <p>Copyright &copy; 2021 - by Lucas Barros <br/> <a href="https://www.linkedin.com/in/lucasbarrosprofessional/" target="_blank">LinkedIn</a></p>
+</footer>
+
+</div>
+</body>
+</html>

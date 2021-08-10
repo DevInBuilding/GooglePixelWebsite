@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+div.centro {
+    display: block;
+    width: 1000px;
+    float: left; /* ### Recurso deve ser usado em conjunto com o display configurado em 'block' ### */
+    border-right: 1px rgba(0, 0, 0, 0) solid;
+    padding: 13px;
+    margin: 10px 70px 10px auto;
+}
+
+h1.tituloSecao {
+    font-size: 16pt;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1ba540;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 30px 10px auto;
+}
+
+audio#musica {
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 488px;
+    width: 300px;
+}
+
+.video-esquerda {
+    display: block;
+    float: left;
+    position: relative;
+    left: 200px;
+    top: 20px;
+    bottom: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
